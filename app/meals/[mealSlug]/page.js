@@ -15,7 +15,11 @@ export default function MealDetailsPage({ params }) {
     <>
       <header className={classes.header}>
         <div className={classes.image}>
-          <Image src={meal.image} alt='Meal Image' fill />
+          <Image
+            src={`https://danyal-user-bucket.s3.us-west-2.amazonaws.com/red-rooster${image}`}
+            alt='Meal Image'
+            fill
+          />
         </div>
         <div className={classes.headerText}>
           <h1>{meal.title}</h1>
